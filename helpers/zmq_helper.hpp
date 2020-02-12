@@ -2,7 +2,6 @@
 #define __ZMQHELPER_HPP_INCLUDED__
 
 #include <zmq.hpp>
-#include <string>
 
 std::string recv_message(zmq::socket_t *sock, int flag = ZMQ_NULL)
 {

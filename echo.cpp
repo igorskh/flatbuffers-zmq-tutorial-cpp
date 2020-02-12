@@ -1,8 +1,4 @@
-#include "zmq_helper.hpp"
-#include <iostream>
-#include "flatbuffers/flatbuffers.h"
-#include "schema_generated.h"
-#include <fstream>
+#include "helpers/zmq_helper.hpp"
 
 int main()
 {
