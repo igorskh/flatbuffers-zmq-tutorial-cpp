@@ -6,15 +6,13 @@
 #include "flatbuffers/flatbuffers.h"
 #include "schema_generated.h"
 
-const int BUFLEN = 1024;
-
 void create_object(flatbuffers::FlatBufferBuilder *builder)
 {
     auto description = builder->CreateString("do any calc");
 
     int n = 5;
     MyCalc::Vec3 *values_vec;
-    values_vec = new MyCalc::Vec3[5];
+    values_vec = new MyCalc::Vec3[n];
     for (int i = 0; i < n; i++)
     {
         auto value = MyCalc::Vec3(i, i + 1, i + 2);
@@ -46,9 +44,6 @@ int main(void)
 
     printf("Sending %u bytes\n", builder.GetSize());
     send_bytes(&broker, builder.GetBufferPointer(), builder.GetSize());
-
-    std::string str = recv_message(&broker);
-    printf("Received %s [%lu]\n", str.c_str(), str.size());
 
     broker.close();
     return 0;

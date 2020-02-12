@@ -31,8 +31,6 @@ int main()
         std::string msg = recv_message(&broker);
 
         extract_data(msg.c_str());
-        // send_message(&broker, identity, ZMQ_SNDMORE);
-        // send_message(&broker, msg);
     }
 
     return 0;
