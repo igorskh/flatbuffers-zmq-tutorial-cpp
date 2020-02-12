@@ -1,0 +1,18 @@
+namespace MyCalc;
+
+enum CalcType: byte { Sum = 0, Average, Median = 2 }
+
+struct Vec3 {
+    x: float;
+    y: float;
+    z: float;
+}
+
+table RawData {
+    description: string;
+    axis: short = 0;
+    calcType: CalcType = Sum; 
+    values: [Vec3];
+}
+
+root_type RawData;
