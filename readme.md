@@ -1,6 +1,6 @@
 # FlatBuffers and ZeroMQ Sample in C++
 
-[First part, detailed description:and implementation in Go](https://github.com/igorskh/flatbuffers-zmq-tutorial).
+[First part, detailed description and implementation in Go](https://github.com/igorskh/flatbuffers-zmq-tutorial).
 
 ## Build
 The following code generates C++ header file from FlatBuffers schema and builds executables in `bin` folder:
