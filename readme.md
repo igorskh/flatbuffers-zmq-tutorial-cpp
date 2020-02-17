@@ -5,6 +5,9 @@
 ## Build
 The following code generates C++ header file from FlatBuffers schema and builds executables in `bin` folder:
 ```bash
+mkdir build
+cd build
+cmake ..
 make
 ```
 
