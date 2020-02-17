@@ -1,8 +1,7 @@
 #ifndef __FLATBUFFERSHELPER_HPP_INCLUDED__
 #define __FLATBUFFERSHELPER_HPP_INCLUDED__
 
-#include "flatbuffers/flatbuffers.h"
-#include "../schema_generated.h"
+#include "schema_generated.h"
 
 void extract_data(const char *data) {
     auto raw_data = MyCalc::GetRawData(data);

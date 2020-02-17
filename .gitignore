@@ -1,4 +1,5 @@
 bin
 data
 .vscode
-schema_generated.h
+schema
+build
